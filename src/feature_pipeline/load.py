@@ -23,12 +23,12 @@ def download_raw_data(raw_dir: Path | str = RAW_DIR, force: bool = False) -> Pat
     
     try:
         folder = Path(kagglehub.dataset_download(KAGGLE_DATASET, force_download=force))
-    except Exception as exec:
+    except Exception as exc:
         raise RuntimeError(
             f"Could not download '{KAGGLE_DATASET}' from kaggle ({exc}). "
             f"Download the CSV manually from https://www.kaggle.com/datasets/{KAGGLE_DATASET} "
             f"and save it as {target}"
-        ) from exec
+        ) from exc
     
     csv_files = sorted(folder.glob("*.csv"))
     if not csv_files:
