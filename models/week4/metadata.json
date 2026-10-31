@@ -1,0 +1,52 @@
+{
+  "candidate": "xgboost_tuned",
+  "selection_metric": "training_cv_roc_auc",
+  "cv_means": {
+    "xgboost_initial": 0.8446235031145483,
+    "xgboost_tuned": 0.8487540433057135
+  },
+  "seed": 42,
+  "holdout_used": false,
+  "completed_trials": 99,
+  "study_name": "week4_xgboost_seed42_v1",
+  "input_columns": [
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "PaperlessBilling",
+    "MonthlyCharges",
+    "is_first_year",
+    "has_internet",
+    "addon_count",
+    "autopay",
+    "spend_per_service",
+    "Contract_Month-to-month",
+    "Contract_One year",
+    "Contract_Two year",
+    "InternetService_DSL",
+    "InternetService_Fiber optic",
+    "InternetService_No",
+    "PaymentMethod_Bank transfer (automatic)",
+    "PaymentMethod_Credit card (automatic)",
+    "PaymentMethod_Electronic check",
+    "PaymentMethod_Mailed check"
+  ],
+  "versions": {
+    "xgboost": "3.4.1",
+    "optuna": "4.9.0",
+    "mlflow": "3.17.2",
+    "shap": "0.54.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3"
+  }
+}
