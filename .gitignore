@@ -7,5 +7,6 @@ __pycache__/
 .env.*
 !.env.example
 /data/
+/reports/
 /models/*.joblib
 /mlruns/
