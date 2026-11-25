@@ -1,0 +1,27 @@
+{
+  "model_version": "churn-20261125T192057662403Z",
+  "threshold": 0.5,
+  "source_candidate": "xgboost_tuned",
+  "parameters": {
+    "n_estimators": 300,
+    "learning_rate": 0.025897539566145523,
+    "max_depth": 2,
+    "subsample": 0.608392278133989,
+    "colsample_bytree": 0.7409670392981499,
+    "min_child_weight": 4
+  },
+  "eval_metrics": {
+    "roc_auc": 0.8518662555228278,
+    "precision": 0.6506550218340611,
+    "recall": 0.5321428571428571,
+    "f1": 0.5854616895874263
+  },
+  "holdout_used": false,
+  "versions": {
+    "xgboost": "3.4.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "shap": "0.54.1"
+  }
+}
